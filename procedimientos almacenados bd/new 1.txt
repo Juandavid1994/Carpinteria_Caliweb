@@ -1,0 +1,59 @@
+DECLARE  @nId INT;
+
+EXEC sp_xml_preparedocument @nId OUTPUT, 
+
+'<proveedores>
+<Rows>
+   <Cedula_Nit>1</Cedula_Nit>
+   <RazonSocial>VENTA AL POR MAYOR PARA CARPINTERIAS</RazonSocial>
+   <Direccion>calle 656</Direccion>
+   <Telefono1>222</Telefono1>
+   <Telefono2>233</Telefono2>
+   <Celular>30022</Celular>
+   <Correo>correo@correo.com</Correo>
+   <Producto>Madera en Pino</Producto>
+</Rows>
+<Rows>
+   <Cedula_Nit>2</Cedula_Nit>
+   <RazonSocial>Surti Ferreteria</RazonSocial>
+   <Direccion>calle 60</Direccion>
+   <Telefono1>222</Telefono1>
+   <Telefono2>233</Telefono2>
+   <Celular>30022</Celular>
+   <Correo>correo@correo.com</Correo>
+   <Producto>Pintura para madera</Producto>
+</Rows>
+<Rows>
+   <Cedula_Nit>3</Cedula_Nit>
+   <RazonSocial>Provedor de maderas</RazonSocial>
+   <Direccion>calle 7a</Direccion>
+   <Telefono1>222</Telefono1>
+   <Telefono2>233</Telefono2>
+   <Celular>30022</Celular>
+   <Correo>correo@correo.com</Correo>
+   <Producto>Madera</Producto>
+</Rows>
+
+</proveedores>'
+
+SELECT 
+
+Cedula_Nit,
+RazonSocial,
+Direccion,
+Telefono1,
+Telefono2,
+Celular,
+Correo,
+Producto
+
+FROM OPENXML (@nId,'proveedores/Rows',2)
+WITH(
+Cedula_Nit INT,
+RazonSocial VARCHAR (50),
+Direccion VARCHAR(50),
+Telefono1 VARCHAR(50),
+Telefono2 VARCHAR(50),
+Celular VARCHAR(50),
+Correo VARCHAR(50),
+Producto VARCHAR(50));

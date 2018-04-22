@@ -1,0 +1,5 @@
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\web.Logica\obj\Debug\web.Logica.csprojResolveAssemblyReference.cache
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\web.Logica\bin\Debug\web.Logica.dll
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\web.Logica\bin\Debug\web.Logica.pdb
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\web.Logica\obj\Debug\web.Logica.dll
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\web.Logica\obj\Debug\web.Logica.pdb

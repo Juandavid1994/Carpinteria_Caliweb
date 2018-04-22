@@ -1,0 +1,7 @@
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\carpinteria_Pagina_Web\obj\Debug\carpinteria_Pagina_Web.csprojResolveAssemblyReference.cache
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\carpinteria_Pagina_Web\bin\carpinteria_Pagina_Web.dll
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\carpinteria_Pagina_Web\bin\carpinteria_Pagina_Web.pdb
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\carpinteria_Pagina_Web\bin\web.Logica.dll
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\carpinteria_Pagina_Web\bin\web.Logica.pdb
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\carpinteria_Pagina_Web\obj\Debug\carpinteria_Pagina_Web.dll
+C:\Users\Juan David\Documents\Visual Studio 2012\Projects\Carpinteria_Caliweb\carpinteria_Pagina_Web\obj\Debug\carpinteria_Pagina_Web.pdb

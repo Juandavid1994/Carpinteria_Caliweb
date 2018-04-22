@@ -1,0 +1,53 @@
+CREATE PROCEDURE spInsertarProveedoresMasivos
+(@cXML VARCHAR(MAX))
+AS
+
+DECLARE @Insertar VARCHAR(100),
+        @nId INT;
+
+BEGIN TRAN @Insertar
+
+EXEC sp_xml_preparedocument @nId OUTPUT, @cXML;
+
+INSERT INTO tbProveedores
+(
+Cedula_Nit,
+RazonSocial,
+Direccion,
+Telefono1,
+Telefono2,
+Celular,
+Correo,
+Producto
+)
+SELECT 
+Cedula_Nit,
+RazonSocial,
+Direccion,
+Telefono1,
+Telefono2,
+Celular,
+Correo,
+Producto
+
+FROM OPENXML (@nId,'proveedores/Rows',2)
+WITH(
+Cedula_Nit INT,
+RazonSocial VARCHAR (50),
+Direccion VARCHAR(50),
+Telefono1 VARCHAR(50),
+Telefono2 VARCHAR(50),
+Celular VARCHAR(50),
+Correo VARCHAR(50),
+Producto VARCHAR(50));
+
+--Asi como preparo el documento, este comando sirve para quitarla, removemos el xml de la memoria 
+
+IF @@ERROR !=0
+BEGIN 
+    ROLLBACK TRAN  @Insertar
+	RETURN -1
+	END 
+
+COMMIT TRAN @Insertar;
+

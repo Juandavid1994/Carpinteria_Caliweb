@@ -1,0 +1,39 @@
+<proveedores>
+<Rows>
+   <Cedula_Nit>1</Cedula_Nit>
+   <RazonSocial>'VentaMadera'</RazonSocial>
+   <Direccion>calle 70</Direccion>
+   <Telefono1>222</Telefono1>
+   <Telefono2>233</Telefono2>
+   <Celular>30022</Celular>
+   <Correo>correo@correo.com</Correo>
+   <Producto>Madera en Pino</Producto>
+</Rows>
+<Rows>
+   <Cedula_Nit>2</Cedula_Nit>
+   <RazonSocial>'Surti Ferreteria'</RazonSocial>
+   <Direccion>calle 60</Direccion>
+   <Telefono1>222</Telefono1>
+   <Telefono2>233</Telefono2>
+   <Celular>30022</Celular>
+   <Correo>correo@correo.com</Correo>
+   <Producto>Pintura para madera</Producto>
+</Rows>
+<Rows>
+   <Cedula_Nit>2</Cedula_Nit>
+   <RazonSocial>'Surti Ferreteria'</RazonSocial>
+   <Direccion>calle 60</Direccion>
+   <Telefono1>222</Telefono1>
+   <Telefono2>233</Telefono2>
+   <Celular>30022</Celular>
+   <Correo>correo@correo.com</Correo>
+   <Producto>Pintura para madera</Producto>
+</Rows>
+
+
+
+</proveedores>
+
+<proveedores>
+<Rows  Cedula_Nit="" RazonSocial="" Direccion=""  Telefono1=""  Telefono2="" Celular=""  Correo=""  Producto =""></Rows>
+</proveedores>
